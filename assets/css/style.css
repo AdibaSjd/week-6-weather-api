@@ -1,0 +1,116 @@
+html *
+{
+   font-family: "Helvetica" ;
+}
+
+/*header*/
+  header{
+    background-image: linear-gradient(to right, rgb(164, 197, 209), rgb(102, 179, 202));
+    color: aliceblue;
+    height: 15%;
+    font-family:"Helvetica";
+    justify-content: center;
+  }
+  h1{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 35px;
+    margin-right: 200px;
+  }
+
+  h2{
+    margin-left: 10px;
+  }
+
+  .searchbtn {
+    color:aliceblue;
+    background-color:  rgb(164, 197, 209);
+    border-style: none;
+    border-radius: 10px;
+    border-color: bisque;
+    height: 25px;
+
+}
+.searchbtn2{
+    border-style:solid;
+    border-radius: 15px;
+    border-color: rgb(164, 197, 209);
+    height: 30px;
+    width: 90%;
+}
+
+/*search bar*/
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 25%;
+  }
+
+  form button {
+    margin-bottom: 10px;
+    color:aliceblue;
+    background-color:  rgb(164, 197, 209);
+    border-style: none;
+    border-radius: 15px;
+    border-color: bisque;
+    height: 30px;
+  }
+
+
+  /*forecast for the week*/
+  .days {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  #p1{
+    background-color: rgb(192, 168, 140);
+    height: 200px;
+    color: aliceblue;
+    margin-left: 40px;
+    border-style: solid;
+    border-color: rgb(142, 74, 38);
+ }
+
+ section {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(192, 168, 140);
+    margin-left: 20px;
+    width: 190px;
+    height: 200px;
+    color: aliceblue;
+   }
+ 
+ p{
+ font-size: medium;
+ color: aliceblue;
+ margin-left: 10px;
+ }
+ 
+ #p1{
+    background-color: rgb(192, 168, 140);
+    height: 200px;
+    color: aliceblue;
+    margin-left: 40px;
+    border-style: solid;
+    border-color: rgb(142, 74, 38);
+ 
+ }
+ 
+ .column{
+     display: flex;
+     flex-direction: column;
+     margin-top: 20px;
+ }
+
+
+
+ /*global container*/
+  .container {
+    display: flex;
+    width: 100%;
+  }
