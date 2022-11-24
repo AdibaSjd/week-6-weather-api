@@ -12,14 +12,22 @@
             <h1>weather forecast</h1>
         </header>
       
-  
         <div class="container">
          <form>
           <div>
             <h2>Search Your City:</h2>
-            <input class="searchbtn2" type="text" placeholder="search location..." name="search"></input>
-            <button class="searchbtn" type="submit">🔍</button>
-         </div>
+            <input class="searchbtn2" type="text" placeholder="search location..." name="search" id="location"></input>
+            <button class="searchbtn" id="search" type="submit">🔍</button>
+          </div>
+
+
+
+
+
+
+
+
+
 
            <button>LONDON</button>
            <button>BIRMINGHAM</button>
@@ -34,10 +42,10 @@
 
          <div class="column">
          <div id="p1">
-          <h2>City</h2>
-          <p>Temp:</p>
-          <p>Humanidity:</p>
-          <p>Wind:</p>
+          <h2 id=location-title></h2>
+          <p id="temp_value"></p>
+          <p id="humid_value"></p>
+          <p id="Wind_value"></p>
          </div>
 
         <div class="days">
@@ -65,3 +73,5 @@
         </div>
       </div>
     </body>
+    
+    <script src="./assets/js/weather.js"></script>
