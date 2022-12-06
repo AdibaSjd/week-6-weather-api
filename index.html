@@ -7,65 +7,62 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
 
-    <body>
-        <header>
-            <h1>weather forecast</h1>
-        </header>
-      
-        <div class="container">
-         <form>
+  <body>
+    <header>
+        <h1>weather forecast</h1>
+    </header>
+  
+      <div class="container">
+        <form>
           <div>
             <h2>Search Your City:</h2>
-            <input class="searchbtn2" type="text" placeholder="search location..." name="search" id="location"></input>
-            <button class="searchbtn" id="search" type="submit">🔍</button>
+            <input class="searchbtn2" type="text" placeholder="search location..." name="search" id="myLocation"></input>
+            <button class="searchbtn" id="search" type="button">🔍</button>
             <div id="error"></div>
           </div>
+            <button>LONDON</button>
+            <button>BIRMINGHAM</button>
+            <button>MANCHESTER</button>
+            <button>BRISTOL</button>
+            <button>LIVERPOOL</button>
+            <button>LEEDS</button>
+            <button>CARDIFF</button>
+            <button>GLASGOW</button>
+        </form>
 
 
-
-           <button>LONDON</button>
-           <button>BIRMINGHAM</button>
-           <button>MANCHESTER</button>
-           <button>BRISTOL</button>
-           <button>LIVERPOOL</button>
-           <button>LEEDS</button>
-           <button>CARDIFF</button>
-           <button>GLASGOW</button>
-         </form>
-
-
-         <div class="column">
-         <div id="p1">
-          <h2 id="yourLocation"></h2>
-          <p id="temp_value"></p>
-          <p id="humid_value"></p>
-          <p id="Wind_value"></p>
-         </div>
-
-        <div class="days">
-         <section>
-          <p>MON 🌥️⛅️🌤️</p>
-         </section>
-
-         <section>
-          <p>TUE 🌥️⛅️🌤️</p> 
-         </section>
-
-         <section>
-          <p>WED 🌥️⛅️🌤️</p>
-         </section>
-
-         <section>
-          <p>THUR 🌥️⛅️🌤️</p>
-         </section>
-
-         <section>
-          <p>FRI 🌥️⛅️🌤️</p>
-         </section>
+        <div class="column">
+        <div id="p1">
+        <h2 id="yourLocation"></h2>
+        <p id="temp_value"></p>
+        <p id="humid_value"></p>
+        <p id="Wind_value"></p>
         </div>
 
-        </div>
+      <div class="days">
+        <section id="WeatherDay1">
+        <p>MON 🌥️⛅️🌤️</p>
+        </section>
+
+        <section id="WeatherDay2">
+        <p>TUE 🌥️⛅️🌤️</p> 
+        </section>
+
+        <section>
+        <p>WED 🌥️⛅️🌤️</p>
+        </section>
+
+        <section>
+        <p>THUR 🌥️⛅️🌤️</p>
+        </section>
+
+        <section>
+        <p>FRI 🌥️⛅️🌤️</p>
+        </section>
       </div>
-    </body>
-    
+
+      </div>
+    </div>
     <script src="./assets/js/js/weather1.js"></script>
+  </body>
+</html> 
