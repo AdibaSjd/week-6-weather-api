@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <title>Weather</title>
@@ -20,49 +19,61 @@
             <button class="searchbtn" id="search" type="button">🔍</button>
             <div id="error"></div>
           </div>
-            <button>LONDON</button>
-            <button>BIRMINGHAM</button>
-            <button>MANCHESTER</button>
-            <button>BRISTOL</button>
-            <button>LIVERPOOL</button>
-            <button>LEEDS</button>
-            <button>CARDIFF</button>
-            <button>GLASGOW</button>
+          <div id="recentSearches">
+            <h2>Recent Searches:</h2>
+            <ul id="recentSearchesList"></ul>
+          </div>
         </form>
 
 
         <div class="column">
         <div id="p1">
-        <h2 id="yourLocation"></h2>
-        <p id="temp_value"></p>
-        <p id="humid_value"></p>
-        <p id="Wind_value"></p>
+          <h2 id="timezone"></h2>
+          <p id="temp_value"></p>
+          <p id="humid_value"></p>
+          <p id="Wind_value"></p>
         </div>
 
       <div class="days">
         <section id="WeatherDay1">
-        <p>MON 🌥️⛅️🌤️</p>
+          <h3 id="dayName1"></h3>
+          <p id="dayTemp1"></p>
+          <p id="dayWind1"></p>
+          <p id="dayHumidity1"></p>
         </section>
 
         <section id="WeatherDay2">
-        <p>TUE 🌥️⛅️🌤️</p> 
+          <h3 id="dayName2"></h3>
+          <p id="dayTemp2"></p>
+          <p id="dayWind2"></p>
+          <p id="dayHumidity2"></p>
         </section>
 
-        <section>
-        <p>WED 🌥️⛅️🌤️</p>
+        <section id="WeatherDay3">
+          <h3 id="dayName3"></h3>
+          <p id="dayTemp3"></p>
+          <p id="dayWind3"></p>
+          <p id="dayHumidity3"></p>
         </section>
 
-        <section>
-        <p>THUR 🌥️⛅️🌤️</p>
+        <section id="WeatherDay4">
+          <h3 id="dayName4"></h3>
+          <p id="dayTemp4"></p>
+          <p id="dayWind4"></p>
+          <p id="dayHumidity4"></p>
         </section>
 
-        <section>
-        <p>FRI 🌥️⛅️🌤️</p>
+        <section id="WeatherDay5">
+          <h3 id="dayName5"></h3>
+          <p id="dayTemp5"></p>
+          <p id="dayWind5"></p>
+          <p id="dayHumidity5"></p>
         </section>
       </div>
 
       </div>
     </div>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script src="./assets/js/js/weather1.js"></script>
   </body>
 </html> 
