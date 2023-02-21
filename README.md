@@ -27,7 +27,7 @@ Customer asked for a page that allows them to search up a location and receive d
  
  
 
-My main issue was ensuring my page was able to the local storage doubling each time a search was made. As each tima a location was serched in local storage was duplicate each previous search from the search before creating a long list of the same searches.
+My main issue was stopping the local storage doubling each time a search was made. As each tima a location was serched in local storage it duplicated each previous search from the search before creating a long list of the same searches.
 
  
 
