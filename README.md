@@ -1,6 +1,6 @@
 # week-6-weather-api
 
-Customer asked for a page that allows them to search up allocation and receive data about weather for the next five days
+Customer asked for a page that allows them to search up a location and receive data about weather for the next five days
 ## User Story
 
 - As a developer I want a page that is interactive using Java Script to allow users to search up a location and retrieve weather data
