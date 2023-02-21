@@ -40,12 +40,12 @@ https://github.com/AdibaSjd/week-6-weather-api
 
 
 ## MY WEB PAGE
-Search page presented to the user.
+Search page presented to the user
 ![](assets/images/Weather-api-1.jpeg)
 
-User is able to search a location and retrieve back data based on the city searched.
+User is able to search a location and retrieve back data based on the city searched
 ![](assets/images/Weather-api-2.jpeg)
 
-User is also able to reload the page and the cities from previous searches still renders on the page.
+User is also able to reload the page and the cities from previous searches still renders on the page
 ![](assets/images/Weather-api-3.jpeg)
 
