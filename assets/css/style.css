@@ -44,7 +44,7 @@ html *
   form {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     width: 25%;
   }
 
@@ -115,5 +115,25 @@ html *
   .container {
     display: flex;
     width: 100%;
+    justify-content: center;
   }
+
+
+  li {
+    color: rgb(255, 255, 255);
+    background-color: rgb(164, 197, 209);
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 10px;
+   
+  
+  }
+
+  ul li:active {
+    border: 2px solid rgb(142, 74, 38);
+}
+
   

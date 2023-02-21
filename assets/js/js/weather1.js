@@ -18,7 +18,10 @@ function getlocation(e) {
         setLocationError("Enter a location");
         // setLocationError("Enter a location");
     } else {
+
         searchlocation (userlocation);
+
+        saveLocation(userlocation);
     }
 }
 function setLocationError(message) {
@@ -38,8 +41,7 @@ const searchlocation = function (search) {
             const lat = locationData.lat;
             const lon = locationData.lon;
 
-            // Save the location to local storage so we can re-run the search later
-            saveLocation(search);
+
 
             // Display the weather for the location
             getWeather(lat, lon);
@@ -59,8 +61,23 @@ function getWeather (lat, lon) {
         .then(response => response.json())
         .then(data => {
             displayCurrentWeather(data);
+            displayTimeZoneWeather(data);
         })
 }
+
+
+const displayTimeZoneWeather= function (data) {
+    console.log(data);
+    const timeWeather = data.timezone;
+    document.querySelector('#city_value').textContent = `Timezone: ${timeWeather}`;
+
+
+//     // Show the fortcast for the next 5 days
+    displayWeatherForecast(data.daily);
+};
+
+
+
 
 //current weather displayed 
 const displayCurrentWeather = function (data) {
@@ -70,9 +87,12 @@ const displayCurrentWeather = function (data) {
     document.querySelector('#humid_value').textContent = `Humidity: ${currentWeather.humidity}%`;
     document.querySelector('#wind_value').textContent = `Wind Speed: ${currentWeather.wind_speed}MPH`;
 
+
     // Show the fortcast for the next 5 days
     displayWeatherForecast(data.daily);
 };
+
+
 
 
 const displayWeatherForecast = (dailyWeather) =>{
@@ -100,6 +120,7 @@ const displayDayWeather = (weatherData, number) => {
 
 // display weather on screen 
 const displayWeather = (weatherData) => {
+    console.log(weatherData)
     document.queryselector("#yourLocation").textContent = `${weatherData.name}, ${weatherData.country}`;
     getWeather(weatherData.lat, weatherData.lon);
 }
@@ -131,5 +152,13 @@ function loadLocations() {
     }
 }
 
+
 // Load in the saved locations when the page first loads
 loadLocations();
+
+$("li").on('click','li',function(){
+    // remove classname 'active' from all li who already has classname 'active'
+    $("li li.active").removeClass("active"); 
+    // adding classname 'active' to current click li 
+    $(this).addClass("active"); 
+});
