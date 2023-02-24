@@ -35,7 +35,7 @@ My main issue was stopping the local storage doubling each time a search was mad
 This is a page developed through HTML and later styled through CSS. The main functionality of the page comes from Java Script which allows for the interactivity by the user to be able to go into the page and search a location. The user is presented with a page containing a daily show of the weather and the weather across five other days. The user can actively track the weather in their desired city while seeing recent searches listed below
 
 ## Page link
-https://github.com/AdibaSjd/week-6-weather-api
+https://adibasjd.github.io/week-6-weather-api/
 
 
 
